@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tutorial">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script defer src="assets/js/script.js"></script>
+    <title>Fixxo.</title>
+</head>
+<body>
+    
+        <nav class="_navbar container">
+            <div class="_logo">
+                Fixxo.
+            </div>
+            <div class="_nav-links">
+                <a href="index.html">Home</a>
+                <a href="#">Categories</a>
+                <a href="#">Products</a>
+                <a class="_active" href="contact.html">Contacs</a>
+            </div>
+            <div class="_nav-icon-links">
+                <a href="#" class="_white-circle">
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                </a>
+                <a href="#" class="_white-circle">
+                    <i class="fa-regular fa-repeat"></i>
+                </a>
+                <a href="#" class="_white-circle">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-theme">1</span>
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="_white-circle">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-theme">3</span>
+                    <i class="fa-regular fa-bag-shopping"></i>
+                </a>
+            </div>
+        </nav>
+
+        <section class="breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Contacts</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="map">
+            <iframe class=" google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.2609147190324!2d18.02002765222432!3d59.34529238157441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d86c5590a35%3A0xac5dd727a529fe56!2sEC%20Utbildning%20AB!5e0!3m2!1sen!2sse!4v1666470838276!5m2!1sen!2sse"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contact-form">
+            <div class="container">
+                <h2>Come in Contact with Us</h2>
+                <form onsubmit = "submitForm(event)" novalidate>
+                    <div>
+                        <input id="name"  onkeyup="validate(event)"  type="text" placeholder="Your Name">
+                        <div id="nameErrorMessage" class="errorMessage"></div>
+                    </div>
+                    <div>
+                        <input id="email" onkeyup="validate(event)"  type="email" placeholder="Your Mail">
+                        <div id="emailErrorMessage" class="errorMessage"></div>
+                    </div>
+                    <div class="textarea">
+                        <textarea id="comment" onkeyup="validate(event)"   placeholder="Comments"></textarea>
+                        <div id="commentErrorMessage" class="errorMessage"></div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn-theme">
+                            <span class="corner-topLeft"></span>
+                            <span class="corner-bottomRight"></span>
+                            Post Comments
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="socialmedia">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div>@ 2022 Fixxo. All Rights Reserved</div>
+        </footer>
+
+    <div style="height: 1000px;"></div>
+</body>
+
+</html>
